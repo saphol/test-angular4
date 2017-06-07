@@ -1,3 +1,9 @@
-bg{
-    color: blue;
+div.row {
+    background-color: #3b5998;
+
+}
+
+
+input {
+    color: black;
 }
