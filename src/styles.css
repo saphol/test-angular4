@@ -14,3 +14,9 @@ h1{
 body{
  background-color:#dfe3ee;
 }
+
+i.left {
+    margin-left: 5px;
+    cursor: pointer;
+}
+

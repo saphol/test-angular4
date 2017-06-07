@@ -1,0 +1,8 @@
+button.btn {
+    background-color: #eee;
+    outline: none;
+}
+
+button.btn:focus{
+   outline:none;
+  }
