@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { User } from 'app/user';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +11,10 @@ export class HeaderComponent implements OnInit {
   result;
   password;
   constructor() { }
+
+  userArray = [
+    {username:'Suphattra', password:'1234', tel:'0888888888', email:'a@hotmail.com'}
+    ]
 
   ngOnInit() {
   }

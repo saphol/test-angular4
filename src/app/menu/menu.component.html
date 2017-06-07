@@ -3,7 +3,7 @@
     <div class="container-fluid">
     </div>
      <ul>
-      <li><a href="#"><app-picture></app-picture><app-fb-name></app-fb-name></a></li>
+      <li><a href="#"><app-picture></app-picture><app-fb-name [user]="userData" *ngFor="let userData of userArray"></app-fb-name></a></li>
       <li><a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i>New Feed</a></li>
       <li><a href="#"><i class="fa fa-commenting" aria-hidden="true"></i>Messager</a></li>
     </ul>

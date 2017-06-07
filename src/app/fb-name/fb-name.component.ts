@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { User } from './../user';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-fb-name',
@@ -7,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FbNameComponent implements OnInit {
 
+  @Input() user = User;
+
+  // userArray = [
+  //   {username:'Suphattra', password:'1234', tel:'0888888888', email:'a@hotmail.com'}
+  //   ]
+  
   constructor() { }
 
   ngOnInit() {

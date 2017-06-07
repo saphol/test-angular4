@@ -4,7 +4,8 @@
       <img src="f.png" alt="Mountain View" style="height: 20px;">
       <input type="text" style="height:20px; width: 400px;">
       <a href="signIn()"><img src="search.png" alt="Mountain View" style="width:15px;height:15px;"></a>
-      <app-picture></app-picture><app-fb-name></app-fb-name>
+      <app-picture></app-picture>
+      <app-fb-name [user]="userData" *ngFor="let userData of userArray"></app-fb-name>
     </div>
     <div class="col-sm-4 text-right">
       <!--<button class="btn btn-secondary">Home</button>-->
