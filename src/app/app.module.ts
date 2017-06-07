@@ -10,7 +10,10 @@ import { AdsComponent } from './ads/ads.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
 import { ProfileComponent } from './profile/profile.component';
-
+import { CommentComponent } from './comment/comment.component';
+import { FbNameComponent } from './fb-name/fb-name.component';
+import { PictureComponent } from './picture/picture.component';
+import { StatusComponent } from './status/status.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { ProfileComponent } from './profile/profile.component';
     HeaderComponent,
     MenuComponent,
     ProfileComponent,
-
+    CommentComponent,
+    FbNameComponent,
+    PictureComponent,
+    StatusComponent
   ],
   imports: [
     BrowserModule,
