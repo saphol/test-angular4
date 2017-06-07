@@ -1,3 +1,53 @@
-<p>
-  content works!
-</p>
+<br>
+<br>
+<div class="container">
+  <div class="content">
+    <div class="panel panel-default">
+      <div class="row">
+        <div class="col-sm-2" style="width: 100%;">
+          <button class="btn btn-secondary"><i class="fa fa-pencil" aria-hidden="true"></i>สร้างโพสต์</button>
+          <button class="btn btn-secondary"><i class="fa fa-file-image-o" aria-hidden="true"></i>อัลบั้มรูปภาพ/วิดีโอ</button>
+          <button class="btn btn-secondary"><i class="fa fa-video-camera" aria-hidden="true"></i>วิดีโอถ่ายทอดสด</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-1 text-right">
+          <app-picture></app-picture>
+        </div>
+        <div class="col-sm text-left" style="padding-left: 0px;">
+          <app-status></app-status>
+        </div>
+      </div>
+      <hr>
+      <div class="row" style="margin-bottom: 10px;padding-left: 5px;">
+        <div class="col-sm-1" style="width: 100%;">
+          <button class="btn btn-secondary" style="border-radius: 0.25em">รูปภาพ/วิดีโอ</button>
+          <button class="btn btn-secondary" style="border-radius: 0.25em">ความรู้สึก/กิจกรรม</button>
+          <button class="btn btn-secondary" style="border-radius: 0.25em">...</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="panel panel-default">
+      <div class="row">
+        <div class="col-sm-1 text-right">
+          <app-picture></app-picture>
+        </div>
+        <div class="col-sm-5 text-left" style="padding-left: 0px;">
+          <app-fb-name></app-fb-name>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5" style="margin-left: 15px;">
+          <app-status></app-status>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <app-comment></app-comment>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
