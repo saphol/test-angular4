@@ -9,6 +9,7 @@ import { EventComponent } from './event/event.component';
 import { AdsComponent } from './ads/ads.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { MenuComponent } from './menu/menu.component';
     AdsComponent,
     HeaderComponent,
     MenuComponent,
+    ProfileComponent,
 
   ],
   imports: [
