@@ -14,6 +14,8 @@ export class AppComponent {
   
   title = 'Facebook';
   statusArray = [];
+  username;
+  password;
 
     constructor (public statusService: StatusService
               , public http: Http){
@@ -25,8 +27,15 @@ export class AppComponent {
         console.log(this.statusArray);
       this.statusArray = this.statusService.statusArray;
       this.statusService.isLogin = true;
+      // this.username = "";
+      // this.password = "";
+      this.statusService.nameLogin = username;
       }
 
+    }
+
+    logoutRequest() {
+      this.statusService.isLogin = false;
     }
 
 }

@@ -1,3 +1,5 @@
+import { Http } from '@angular/http';
+import { StatusService } from './../services/status.service';
 import { User } from 'app/user';
 import { Component, OnInit, Input } from '@angular/core';
 
@@ -10,7 +12,12 @@ export class HeaderComponent implements OnInit {
   title = 'Header';
   result;
   password;
-  constructor() { }
+  statusArray = [];
+
+  constructor (public statusService: StatusService
+              , public http: Http){
+     this.statusArray = this.statusService.statusArray;
+    }
 
   ngOnInit() {
   }

@@ -11,7 +11,7 @@
     </div>
     <div class="col-sm-4 text-center">
       <app-picture></app-picture>
-      <app-fb-name [user]="userData" *ngFor="let userData of userArray"></app-fb-name>
+      {{ statusService.nameLogin }}
       <button class="btn btn-secondary bg-button">หน้าหลัก</button>
       <i class="fa fa-user-plus left" aria-hidden="true"></i>
       <i class="fa fa-commenting left" aria-hidden="true"></i>

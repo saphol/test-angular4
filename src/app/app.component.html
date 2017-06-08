@@ -7,15 +7,14 @@
       </div>
       <div class="col-sm-7">
         <app-content></app-content>
-
         <app-post *ngIf="statusService.isLogin"></app-post>
-        
       </div>
       <div class="col-sm-2 text-center">
         <p><b>User Login</b></p>
         <input type="text" class="form-control" [(ngModel)]="username">
         <input type="password" class="form-control" [(ngModel)]="password">
         <button (click)="loginRequest(username, password)" style="margin-top: 10px;">Login</button>
+        <button (click)="logoutRequest()" style="margin-top: 10px;">Logout</button>
       </div>
     </div>
   </div>
@@ -26,5 +25,3 @@
     {{ item.name }}
   </li>
 </ul>-->
-
-

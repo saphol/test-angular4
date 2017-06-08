@@ -1,3 +1,5 @@
+import { Http } from '@angular/http';
+import { StatusService } from './../services/status.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  statusArray = [];
+
+   constructor (public statusService: StatusService
+              , public http: Http){
+     this.statusArray = this.statusService.statusArray;
+    }
 
   ngOnInit() {
   }
