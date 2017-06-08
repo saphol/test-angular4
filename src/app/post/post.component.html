@@ -1,0 +1,28 @@
+<div class="content" *ngFor="let item of statusService.statusArray">
+  <div class="panel panel-default">
+    <div class="row">
+      <div class="col-sm-3">
+        <app-picture></app-picture>
+        {{ item.name }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10" style="margin-left: 15px;">
+        <!--<app-status></app-status>-->
+        <h3>{{ item.content }}</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <app-comment></app-comment>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--<ul>
+  <li *ngFor="let item of statusService.statusArray">
+    {{ item.name }}
+  </li>
+</ul>-->

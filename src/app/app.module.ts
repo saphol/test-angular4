@@ -1,3 +1,4 @@
+import { StatusService } from './services/status.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -14,6 +15,7 @@ import { CommentComponent } from './comment/comment.component';
 import { FbNameComponent } from './fb-name/fb-name.component';
 import { PictureComponent } from './picture/picture.component';
 import { StatusComponent } from './status/status.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -27,14 +29,15 @@ import { StatusComponent } from './status/status.component';
     CommentComponent,
     FbNameComponent,
     PictureComponent,
-    StatusComponent
+    StatusComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [StatusService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

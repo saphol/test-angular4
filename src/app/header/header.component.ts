@@ -12,10 +12,6 @@ export class HeaderComponent implements OnInit {
   password;
   constructor() { }
 
-  userArray = [
-    {username:'Suphattra', password:'1234', tel:'0888888888', email:'a@hotmail.com'}
-    ]
-
   ngOnInit() {
   }
 

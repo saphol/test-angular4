@@ -29,24 +29,4 @@
     </div>
   </div>
 </div>
-<div class="content">
-  <div class="panel panel-default">
-    <div class="row">
-      <div class="col-sm-3">
-        <app-picture></app-picture>
-        <app-fb-name [user]="userData" *ngFor="let userData of userArray"></app-fb-name>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10" style="margin-left: 15px;">
-        <!--<app-status></app-status>-->
-        <h3>เช้าวันนี้ อากาศสดใสจัง ^^</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <app-comment></app-comment>
-      </div>
-    </div>
-  </div>
-</div>
+ <!--<app-post *ngFor="let item of statusService.statusArray"></app-post>-->

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StatusService } from '../services/status.service';
 
 @Component({
   selector: 'app-content',
@@ -7,13 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
-  userArray = [
-    {username:'Suphattra', password:'1234', tel:'0888888888', email:'a@hotmail.com'}
-    ]
+  statusArray = [];
 
-  constructor() { }
+  constructor(public statusService: StatusService) {
+    //this.statusArray = this.statusService.statusArray;
+   }
 
-  
 
   ngOnInit() {
   }
