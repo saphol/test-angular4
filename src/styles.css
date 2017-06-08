@@ -20,3 +20,24 @@ i.left {
     cursor: pointer;
 }
 
+.btn-custom {
+    border-radius: 1em;
+    margin-top: 5px;
+    background-color: #3b5998;
+    color: #fff;
+    font-size: 12px;
+    outline: none;
+}
+
+.btn-custom:focus{
+   outline:none;
+}
+
+button.btn {
+    background-color: #eee;
+    outline: none;
+}
+
+button.btn:focus{
+   outline:none;
+}
